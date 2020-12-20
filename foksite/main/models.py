@@ -8,4 +8,4 @@ class Msg(models.Model):
 
     def __str__(self):
         n1 = '\n'
-        return f"{msg_author_username}{n1}{msg_content}{n1}{msg_send_time}"
+        return f"{self.msg_author_username}{n1}{self.msg_content}{n1}{self.msg_send_time}"
